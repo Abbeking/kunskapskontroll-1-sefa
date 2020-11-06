@@ -9,9 +9,9 @@ Beskrivning:
 
 # (2) - " Buy " knappen inom art-1 blir till en längre röd knapp med olika sizes för tröjan och highlightar beskrivningen med grått.
 
-# (3) - " Products " knappen gör så att tröjan inom art-1 ändrar färg.
+# (3) - " Products " knappen gör så att tröjan inom art-1 ändrar "foto".
 
-# (4) - " Contact " knappen gör så att " buy " knappen inom art-2 inte syns & omvandlar boxen till en livechat för att få hjälp.
+# (4) - " Contact " knappen gör så att " buy " knappen inom art-2 inte syns & omvandlar boxen till en livechat för att få hjälp. (Text är ändrat, färg inlagt osv)
 
 # (5) - " Varukorg " symbolen gör så att UL med Li aktiveras nedanför med border, färg & text. Det visas om det finns på lager med texten " In stock "
 
