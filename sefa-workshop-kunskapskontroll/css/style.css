@@ -29,6 +29,10 @@ header > img {
     width: 100%;
 }
 
+img {
+    cursor: pointer;
+}
+
 header nav {
     margin-left: auto;
     display: flex;
@@ -112,6 +116,11 @@ main article button {
     padding: 1rem 1.5rem;
     width: 6rem;
     border-radius: .25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(58, 53, 53);
 }
 
 footer {
