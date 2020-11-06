@@ -1,4 +1,4 @@
-hello
+
 // Återställ knappen
 
 let btns = document.querySelectorAll('button');
