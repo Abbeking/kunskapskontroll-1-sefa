@@ -66,13 +66,14 @@ btn5.addEventListener('click',
 
 
 // Sjätte knappen (Varukorgen -- symbolen) Scrolla ner så ser du " IN STOCK "
+
+// Kompletterat här, med hjälp av denna så kommer du kunna trycka på varukorgen en gång och det kommer inte visa fler ifall du trycker igen. Detta resetas såklart med.
 let btn6 = cartBtn[1];
 btn6.addEventListener('click',
-    function (event) {
-        addList();
-    }
-
-);
+    function handler (event) {
+    this.removeEventListener("click", handler);
+    addList();
+  });
 
 /****************************************************************/
 function resetAll() {
@@ -81,7 +82,8 @@ function resetAll() {
 
     // Image (Reset)
     let image = document.querySelector('.art-1 img');
-    image.src = "../img/hoodie-ash.png";
+    // Kompletterat här: genom att ta bort .. och sätta in . bara i början.
+    image.src = "./img/hoodie-ash.png";
 
     // Button (change in art1)
     let art1Btn = document.querySelector('.art-1 button');
@@ -111,7 +113,15 @@ function resetAll() {
     art2P.style.fontWeight = '';
 
     // List added with ul
-    document.querySelector('ul').remove();
+    let addedUl = document.querySelector('ul').remove();
+
+    btn6.addEventListener('click',
+        function handler (event) {
+        this.removeEventListener("click", handler);
+        addList();
+      });
+    
+    
 }
 /****************************************************************/
 
@@ -157,7 +167,8 @@ function RemoveArt2Btn () {
 // ändrar bild i art-1
 function changePhoto () {
     let image = document.querySelector('.art-1 img');
-    image.src = "../img/hoodie-fire.png";
+    // Kompletterat här: genom att ta bort .. och sätta in . bara i början.
+    image.src = "./img/hoodie-fire.png";
 }
 
 /****************************************************************/
